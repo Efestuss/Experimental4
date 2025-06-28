@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - name: Checkout del código
         uses: actions/checkout@v3
@@ -14,5 +15,5 @@ jobs:
       - name: Simulación de validación
         run: echo Todo correcto. Archivos detectados:
 
-      - name: Listar archivos
+      - name: Listar archivos del proyecto
         run: dir
